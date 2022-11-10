@@ -1,0 +1,134 @@
+{
+  "root": true,
+  "env": {
+    "node": true,
+    "browser": true
+  },
+  "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [
+        ".ts",
+        ".tsx"
+      ]
+    },
+    "import/resolver": {
+      "typescript": {}
+    }
+  },
+  "parser": "vue-eslint-parser",
+  "parserOptions": {
+    "parser": "@typescript-eslint/parser",
+    "project": "./tsconfig.json"
+  },
+  "extends": [
+    "plugin:vue/recommended",
+    "@vue/typescript/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:unicorn/recommended",
+    "airbnb-typescript",
+    "plugin:eslint-comments/recommended",
+    "plugin:promise/recommended",
+    "plugin:import/recommended"
+  ],
+  "plugins": [
+    "vue-a11y",
+    "@typescript-eslint",
+    "import",
+    "promise"
+  ],
+  "rules": {
+    "vue/max-attributes-per-line": "off",
+    "vue/comma-dangle": "off",
+    "unicorn/filename-case": "off",
+    "unicorn/no-null": "off",
+    "unicorn/explicit-length-check": "off",
+    "unicorn/no-useless-undefined": "off",
+    "unicorn/no-fn-reference-in-iterator": "off",
+    "unicorn/no-abusive-eslint-disable": "off",
+    "unicorn/prevent-abbreviations": "off",
+    "unicorn/no-array-for-each": "off",
+    "react/jsx-filename-extension": "off",
+    "@typescript-eslint/indent": "off",
+    "import/named": "warn",
+    "import/no-unresolved": "warn",
+    "import/no-default-export": "warn",
+    "indent": [
+      "warn",
+      2
+    ],
+    "strict": [
+      "warn"
+    ],
+    "quotes": [
+      "warn",
+      "single",
+      {
+        "allowTemplateLiterals": true
+      }
+    ],
+    "semi": [
+      "warn",
+      "always"
+    ],
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "consistent-return": "off",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "class-methods-use-this": "off",
+    "@typescript-eslint/comma-dangle": "warn",
+    "@typescript-eslint/brace-style": "off",
+    "@typescript-eslint/lines-between-class-members": [
+      "warn",
+      "always",
+      {
+        "exceptAfterSingleLine": true
+      }
+    ],
+    "no-empty": [
+      "warn",
+      {
+        "allowEmptyCatch": true
+      }
+    ],
+    "generator-star-spacing": [
+      "warn",
+      {
+        "before": false,
+        "after": true
+      }
+    ],
+    "keyword-spacing": [
+      "warn",
+      {
+        "before": true,
+        "after": true
+      }
+    ],
+    "brace-style": [
+      "warn",
+      "stroustrup"
+    ],
+    "curly": [
+      "warn",
+      "all"
+    ],
+    "array-bracket-spacing": [
+      "warn",
+      "never"
+    ],
+    "object-curly-spacing": [
+      "warn",
+      "always"
+    ],
+    "object-curly-newline": [
+      "warn",
+      {
+        "multiline": true
+      }
+    ],
+    "space-in-parens": [
+      "warn",
+      "never"
+    ]
+  }
+}
